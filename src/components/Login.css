@@ -1,0 +1,158 @@
+/* src/components/Login.css */
+
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.login-left,
+.login-right {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.login-left {
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-left h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.login-left p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.login-right {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #ddd;
+}
+
+.login-right h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button:hover {
+    background: #0056b3;
+}
+
+.login-error {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #d9534f;
+}
+
+.signup-footer {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.signup-footer-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-right {
+        border-left: none;
+        border-top: 2px solid #ddd;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-left h1 {
+        font-size: 28px;
+    }
+
+    .login-left p {
+        font-size: 16px;
+    }
+
+    .login-input {
+        font-size: 14px;
+    }
+
+    .login-button {
+        font-size: 16px;
+    }
+
+    .signup-footer {
+        font-size: 14px;
+    }
+}
